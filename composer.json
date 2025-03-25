@@ -1,0 +1,26 @@
+{
+    "name": "rh/quotes",
+    "description": "test for create package in laravel",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "RH\\Quotes\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "johan",
+            "email": "johanp345@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "extra":{
+        "laravel":{
+            "providers":[
+                "RH\\Quotes\\Providers\\QuotesServiceProvider"
+            ]
+        }
+    }
+}

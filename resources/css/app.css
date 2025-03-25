@@ -1,0 +1,32 @@
+@import "tailwindcss";
+#header-ppal {
+    height: 60px;
+}
+#main-app {
+    @apply overflow-y-auto min-h-screen flex flex-col  bg-[#f4f4f4];
+}
+#content-app {
+    @apply my-15 w-full;
+}
+#content-app .wrap-quotes {
+    @apply bg-white rounded-lg p-5 shadow-lg;
+}
+#content-app .wrap-quotes ul {
+    @apply min-h-[400px] max-h-[840] overflow-y-auto py-5;
+}
+.button {
+    @apply flex h-10 rounded-lg text-center leading-10 text-white text-lg font-medium cursor-pointer px-5;
+}
+.input {
+    @apply flex h-10 rounded-lg text-center leading-10 text-lg font-medium px-3 border border-gray-400;
+}
+
+.quote-item {
+    @apply rounded-lg bg-gray-100 p-5 flex flex-col mt-5 shadow-sm;
+}
+.quote-item p {
+    @apply text-base font-medium;
+}
+.quote-item span {
+    @apply w-fit ml-auto text-sm font-medium;
+}
