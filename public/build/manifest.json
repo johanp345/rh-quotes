@@ -1,12 +1,12 @@
 {
   "resources/css/app.css": {
-    "file": "vendor/quotes-ui/app-DfNjG2gC.css",
+    "file": "vendor/quotes-ui/quotesCss.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "vendor/quotes-ui/app-Q4nP0imV.js",
-    "name": "app",
+    "file": "vendor/quotes-ui/quotesApp.js",
+    "name": "quotesApp",
     "src": "resources/js/app.js",
     "isEntry": true
   }

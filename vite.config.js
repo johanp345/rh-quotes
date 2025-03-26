@@ -8,19 +8,20 @@ export default defineConfig({
         laravel({
             input: ['resources/js/app.js','resources/css/app.css'],
             refresh: true,
+            buildDirectory:"dist"
         }),
         tailwindcss(),
         vue(),
 
     ],
     build: {
-        outDir: 'public/build/',
+        outDir: 'dist',
         manifest: 'manifest.json',
         emptyOutDir: true,
         rollupOptions: {
             output: {
-                assetFileNames: 'vendor/quotes-ui/[name]-[hash][extname]',
-                entryFileNames: 'vendor/quotes-ui/[name]-[hash].js',
+                // assetFileNames: 'assets/[name]-[hash][extname]',
+                // entryFileNames: 'assets/[name]-[hash].js',
                 manualChunks: undefined
             }
         }
