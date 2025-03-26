@@ -42,14 +42,7 @@ class QuotesServiceProvider extends ServiceProvider
         
         // sources
         $this->publishes([
-            __DIR__ . '/../../resources/js' => resource_path('js/vendor/quotes-ui'),
-        ], 'quotes-ui-sources-js');
-        $this->publishes([
             __DIR__ . '/../../resources/css' => resource_path('css/vendor/quotes-ui'),
         ], 'quotes-ui-sources-css');
-        //viewa
-        $this->publishes([
-            __DIR__ . '/../../resources/views' => resource_path('views/quotes'),
-        ], 'quotes-ui-sources-views');
     }
 }
