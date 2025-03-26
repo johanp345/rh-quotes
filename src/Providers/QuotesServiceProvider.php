@@ -39,5 +39,13 @@ class QuotesServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../../dist' => public_path('vendor/quotes-ui'),
         ], 'quotes-ui-assets');
+        
+        // sources
+        $this->publishes([
+            __DIR__ . '/../../resources/js' => resource_path('js/vendor/quotes-ui'),
+        ], 'quotes-ui-sources-js');
+        $this->publishes([
+            __DIR__ . '/../../resources/css' => resource_path('css/vendor/quotes-ui'),
+        ], 'quotes-ui-sources-css');
     }
 }
