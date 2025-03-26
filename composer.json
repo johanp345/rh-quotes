@@ -8,6 +8,11 @@
             "RH\\Quotes\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "RH\\Quotes\\Tests\\": "tests/"
+        }
+    },
     "authors": [
         {
             "name": "johan",
@@ -15,12 +20,15 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {},
     "extra":{
         "laravel":{
             "providers":[
                 "RH\\Quotes\\Providers\\QuotesServiceProvider"
             ]
         }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.1",
+        "phpunit/phpunit": "^11.5"
     }
 }
