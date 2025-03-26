@@ -37,7 +37,7 @@ class QuotesServiceProvider extends ServiceProvider
 
         // Assets Vue
         $this->publishes([
-            __DIR__ . '/../../dist' => public_path('vendor/quotes-ui'),
+            __DIR__ . '/../../public/build/vendor/quotes-ui' => public_path('vendor/quotes-ui'),
         ], 'quotes-ui-assets');
         
         // sources
