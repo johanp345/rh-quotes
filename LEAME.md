@@ -1,13 +1,13 @@
-#### Laravel package for assessment
+####  Laravel package for assessment
 
 Este paquete tiene como finalidad evaluar las habilidades para diseñar, desarrollar, probar un paquete de laravel con las mejores practicas.
 
-####Requisitos
+#### Requisitos
 
 `PHP ^8.0`
 `laravel ^12`
 
-####Installation
+#### Installation
 Debes modificar tu archivo `composer.json` agregando el repositorio github y agregando el paquete a tus dependencias de la siguiente manera
 
 ```json
@@ -38,11 +38,11 @@ php artisan vendor:publish --tag=quotes-ui-assets --force
  php artisan vendor:publish --tag=config --force
 ```
 
-Realizado esta operación podremos acceder a la ruta que crea automaticamente el paquete
->###### ruta-de-mi-proyecto.com/quotes-ui
+####  Realizado esta operación podremos acceder a la ruta que crea automaticamente el paquete
+##### ruta-de-mi-proyecto.com/quotes-ui
 Alli podremos interactuar con las opciones de carga de citas del paquete
 
-#####Archivo de configuación 
+##### Archivo de configuación 
 
  limitación de tasa de solicitudes y url del api `.env`
  
@@ -52,10 +52,10 @@ QUOTES_RATE_LIMIT=10
 QUOTES_RATE_WINDOW=60
 ```
 
-#### Test Cases
+####  Test Cases
 Para ejecutar los test case debemos cumplir con los siguientes pasos
 
-####Desde la ruta del paquete 
+#### Desde la ruta del paquete 
 
 ##### Todos los tests
 `./vendor/bin/phpunit`
@@ -66,7 +66,7 @@ Para ejecutar los test case debemos cumplir con los siguientes pasos
 ##### Solo Unit tests
 `./vendor/bin/phpunit --testsuite "Package Unit Tests"`
 
-####Desde la app principal
+#### Desde la app principal
 
 en el `Composer.json` de tu aplicación principal inserta  (esto es solo para dev)
 ```
@@ -101,6 +101,6 @@ En la aplicación principal, instala las dependencias necesarias para las prueba
 ##### Configurar variables de entorno
 Añade estas variables al `.env.testing` de la aplicación principal:
 
-####Ejecutar
+#### Ejecutar
 
 `php artisan test --testsuite="Package Tests"`

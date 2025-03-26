@@ -1,18 +1,19 @@
-#### Laravel package for assessment
+####  Laravel package for assessment
 
 This package is intended to assess the skills to design, develop, and test a Laravel package using best practices.
 
-####Requisitos
+#### Requisitos
 
 `PHP ^8.0`
+
 `laravel ^12`
 
-####Installation
+#### Installation
 You need to modify your `composer.json` file by adding the github repository and adding the package to your dependencies as follows
 
 ```json
 "require-dev": {
-        ...
+        ...,
         "rh/quotes": "@dev"
     },
 "repositories":[
@@ -38,12 +39,13 @@ php artisan vendor:publish --tag=quotes-ui-assets --force
  php artisan vendor:publish --tag=config --force
 ```
 
-Once this operation is done we can access the route that the package automatically creates.
+### Once this operation is done we can access the route that the package automatically creates.
 
->###### ruta-de-mi-proyecto.com/quotes-ui
+##### ruta-de-mi-proyecto.com/quotes-ui
+
 There we can interact with the package's appointment loading options.
 
-#####Configuration file
+#### #Configuration file
 
 Request rate limiting and API URL `.env`
  
@@ -53,10 +55,10 @@ QUOTES_RATE_LIMIT=10
 QUOTES_RATE_WINDOW=60
 ```
 
-#### Test Cases
+####  Test Cases
 To run the test cases we must follow the following steps:
 
-####From the package route
+#### From the package route
 
 ##### All tests
 `./vendor/bin/phpunit`
@@ -67,7 +69,7 @@ To run the test cases we must follow the following steps:
 ##### Only Unit tests
 `./vendor/bin/phpunit --testsuite "Package Unit Tests"`
 
-####From the main app
+#### From the main app
 
 in your main app's `Composer.json` insert (this is for dev only)
 ```
@@ -102,6 +104,6 @@ In the main application, install the dependencies needed for package testing:
 ##### Configure environment variables
 Add these variables to the `.env.testing` of the main application:
 
-####Execute
+#### Execute
 
 `php artisan test --testsuite="Package Tests"`
