@@ -18,7 +18,7 @@
     @apply flex h-10 rounded-lg text-center leading-10 text-white text-lg font-medium cursor-pointer px-5;
 }
 .input {
-    @apply flex h-10 rounded-lg text-center leading-10 text-lg font-medium px-3 border border-gray-400;
+    @apply flex h-10 rounded-lg text-center leading-10 text-lg font-medium px-3 border border-gray-400 bg-white;
 }
 
 .quote-item {
